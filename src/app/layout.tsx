@@ -11,8 +11,8 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "آف‌چ - پلتفرم جامع کد تخفیف و کوپن",
-  description: "بهترین کدهای تخفیف، کوپن‌ها و پیشنهادات ویژه فروشگاه‌های آنلاین را در آف‌چ پیدا کنید.",
+  title: "تخفیف‌کده - پلتفرم جامع کد تخفیف و کوپن",
+  description: "بهترین کدهای تخفیف، کوپن‌ها و پیشنهادات ویژه فروشگاه‌های آنلاین را در تخفیف‌کده پیدا کنید.",
 };
 
 export default function RootLayout({

@@ -30,16 +30,16 @@ export default function Home() {
             بیشترین تخفیف‌ها، برای بهترین خریدها
           </h1>
           <p className="text-primary-100 mb-10 max-w-2xl text-lg">
-            روزانه صدها کد تخفیف، کوپن و پیشنهاد ویژه از معتبرترین فروشگاه‌های اینترنتی ایران در آف‌چ منتشر می‌شود.
+            روزانه صدها کد تخفیف، کوپن و پیشنهاد ویژه از معتبرترین فروشگاه‌های اینترنتی ایران در تخفیف‌کده منتشر می‌شود.
           </p>
 
-          <div className="w-full max-w-3xl relative">
+          <div className="w-full max-w-3xl relative px-2 sm:px-0">
             <input
               type="text"
-              placeholder="دنبال چه فروشگاهی می‌گردی؟ دیجی‌کالا، اسنپ‌فود، فیلیمو..."
-              className="w-full pl-12 pr-6 py-4 md:py-5 rounded-2xl shadow-xl border-0 focus:ring-4 focus:ring-primary-400/50 text-gray-900 text-base md:text-lg"
+              placeholder="دنبال چه فروشگاهی می‌گردی؟ (مثلا دیجی‌کالا)"
+              className="w-full pl-12 pr-6 py-4 md:py-5 rounded-2xl shadow-xl border-2 border-white/20 bg-white dark:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-white/30 text-gray-800 dark:text-gray-100 placeholder:text-gray-500 dark:placeholder:text-gray-400 text-sm sm:text-base md:text-lg transition-all"
             />
-            <Search className="absolute left-4 top-4 md:top-5 text-gray-400 w-6 h-6" />
+            <Search className="absolute left-6 sm:left-4 top-[18px] md:top-5 text-primary-500 dark:text-primary-400 w-6 h-6 pointer-events-none" />
           </div>
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
@@ -182,7 +182,7 @@ export default function Home() {
 
            <div className="md:w-1/2 z-10 mb-8 md:mb-0">
              <h2 className="text-3xl md:text-4xl font-black mb-4 flex items-center gap-2">
-               <Gift className="w-8 h-8 text-yellow-300" /> اپلیکیشن آف‌چ
+               <Gift className="w-8 h-8 text-yellow-300" /> اپلیکیشن تخفیف‌کده
              </h2>
              <p className="text-primary-100 text-lg mb-6 leading-relaxed">
                با نصب اپلیکیشن، کدهای تخفیف مخصوص موبایل را دریافت کنید و اولین نفری باشید که از جشنواره‌ها باخبر می‌شوید.
@@ -201,7 +201,7 @@ export default function Home() {
              {/* Mock phone frame */}
              <div className="w-48 h-96 border-8 border-gray-900 rounded-[2.5rem] bg-gray-50 shadow-2xl relative overflow-hidden flex items-center justify-center">
                 <div className="absolute top-0 w-24 h-6 bg-gray-900 rounded-b-xl"></div>
-                <div className="text-primary-500 font-black text-2xl">آف‌چ</div>
+                <div className="text-primary-500 font-black text-2xl">تخفیف‌کده</div>
              </div>
            </div>
         </div>

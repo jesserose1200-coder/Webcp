@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">درباره آف‌چ</h3>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">درباره تخفیف‌کده</h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-              آف‌چ مرجع تخصصی کد تخفیف، کوپن و پیشنهادات ویژه فروشگاه‌های اینترنتی است. ما به شما کمک می‌کنیم تا خریدی ارزان‌تر و هوشمندانه‌تر داشته باشید.
+              تخفیف‌کده مرجع تخصصی کد تخفیف، کوپن و پیشنهادات ویژه فروشگاه‌های اینترنتی است. ما به شما کمک می‌کنیم تا خریدی ارزان‌تر و هوشمندانه‌تر داشته باشید.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 dark:border-gray-700 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} تمامی حقوق برای آف‌چ محفوظ است.
+            © {new Date().getFullYear()} تمامی حقوق برای تخفیف‌کده محفوظ است.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             {/* Social icons could go here */}

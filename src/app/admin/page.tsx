@@ -3,7 +3,7 @@ import { LayoutDashboard, Store, Tag, Users, Settings, Plus, Edit2, Trash2 } fro
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'پنل مدیریت | آف‌چ',
+  title: 'پنل مدیریت | تخفیف‌کده',
 };
 
 export default function AdminDashboard() {

@@ -23,7 +23,7 @@ export default function SubmitCouponPage() {
 
            <div className="bg-blue-50 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 p-4 rounded-xl flex gap-3 mb-8 text-sm">
              <Info className="shrink-0 mt-0.5" size={20} />
-             <p>کدهای ارسال شده پس از بررسی توسط تیم پشتیبانی آف‌چ، با نام شما در سایت منتشر خواهند شد.</p>
+             <p>کدهای ارسال شده پس از بررسی توسط تیم پشتیبانی تخفیف‌کده، با نام شما در سایت منتشر خواهند شد.</p>
            </div>
 
            <form className="space-y-6">
