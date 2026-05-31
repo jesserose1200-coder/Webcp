@@ -3,7 +3,7 @@ import MerchantCard from '@/components/MerchantCard';
 import { Heart, Bell, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'علاقه‌مندی‌ها | آف‌چ',
+  title: 'علاقه‌مندی‌ها | تخفیف‌کده',
 };
 
 export default function FavoritesPage() {

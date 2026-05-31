@@ -31,7 +31,7 @@ export default function SingleMerchantPage({ params }: PageProps) {
       {/* Breadcrumb */}
       <nav className="flex text-sm text-gray-500 mb-6">
         <ol className="flex items-center space-x-2 space-x-reverse">
-          <li><a href="/" className="hover:text-primary-600">آف‌چ</a></li>
+          <li><a href="/" className="hover:text-primary-600">تخفیف‌کده</a></li>
           <li><span>/</span></li>
           <li><a href="/merchants" className="hover:text-primary-600">فروشگاه‌ها</a></li>
           <li><span>/</span></li>

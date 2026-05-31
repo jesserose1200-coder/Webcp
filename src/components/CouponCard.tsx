@@ -33,9 +33,9 @@ export default function CouponCard({ coupon, merchant, onShowCoupon }: CouponCar
   };
 
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row ${isExpired ? 'opacity-70 grayscale-[0.5]' : ''}`}>
+    <div className={`bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row group ${isExpired ? 'opacity-70 grayscale-[0.5]' : ''}`}>
       {/* Value Section (Right side in RTL) */}
-      <div className="bg-primary-50 dark:bg-gray-700 p-6 flex flex-col items-center justify-center md:w-1/4 border-b md:border-b-0 md:border-l border-gray-100 dark:border-gray-600 border-dashed">
+      <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-700 dark:to-gray-800 p-6 flex flex-col items-center justify-center md:w-1/4 border-b md:border-b-0 md:border-l border-dashed border-gray-200 dark:border-gray-600">
         {merchant && (
           <span className="text-sm text-gray-500 dark:text-gray-400 mb-2 font-medium">{merchant.name}</span>
         )}
@@ -74,11 +74,11 @@ export default function CouponCard({ coupon, merchant, onShowCoupon }: CouponCar
         <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
           <div className="flex items-center gap-3 text-xs text-gray-500">
              <div className="flex gap-2">
-                <button className="hover:text-green-600 flex items-center gap-1" title="کار کرد"><ThumbsUp size={14}/> {coupon.votes}</button>
-                <button className="hover:text-red-600 flex items-center gap-1" title="کار نکرد"><ThumbsDown size={14}/></button>
+                <button className="p-1 hover:text-green-600 hover:bg-green-50 rounded transition-colors flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-green-500" title="کار کرد"><ThumbsUp size={14}/> {coupon.votes}</button>
+                <button className="p-1 hover:text-red-600 hover:bg-red-50 rounded transition-colors flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-red-500" title="کار نکرد"><ThumbsDown size={14}/></button>
              </div>
              {coupon.expirationDate && (
-               <span className="flex items-center gap-1">
+               <span className="flex items-center gap-1 text-orange-600 dark:text-orange-400 font-medium bg-orange-50 dark:bg-gray-800 px-2 py-1 rounded-md">
                  <Clock size={14} /> تا {new Date(coupon.expirationDate).toLocaleDateString('fa-IR')}
                </span>
              )}
@@ -87,7 +87,7 @@ export default function CouponCard({ coupon, merchant, onShowCoupon }: CouponCar
           {!isExpired && (
             <button
               onClick={handleAction}
-              className="px-6 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg text-sm font-medium transition-colors"
+              className="px-6 py-2.5 bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white rounded-xl text-sm font-bold transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
             >
               {coupon.type === 'code' ? 'مشاهده کد' : 'استفاده از پیشنهاد'}
             </button>
